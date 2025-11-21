@@ -11,7 +11,7 @@
         let baseBalance = 0;
         let isFirstLoad = true;
 
-        // DOM Elements
+        
         const loginPage = document.getElementById('login-page');
         const mainApp = document.getElementById('main-app');
         const loginForm = document.getElementById('login-form');
@@ -38,7 +38,7 @@
             }
         });
 
-        // Login Form 
+        // Login 
         loginForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -70,7 +70,7 @@
             // Show main app
             showMainApp();
             
-            // Initialize date
+            
             const today = new Date();
             const formattedDate = today.toISOString().split('T')[0];
             document.getElementById('date').value = formattedDate;
@@ -237,7 +237,7 @@
                 baseBalance = data.baseBalance || 0;
                 currentBalance = data.currentBalance || 0;
             } else {
-                // Databaru untuk user
+                // Databaru buat user
                 transactions = [];
                 baseBalance = 0;
                 currentBalance = 0;
