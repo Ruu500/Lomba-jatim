@@ -637,7 +637,7 @@
         }
 
         .swipe-hint {
-            display: none;
+            display: block;
             text-align: center;
             color: var(--text-secondary);
             font-size: 14px;
@@ -650,7 +650,7 @@
             50% { opacity: 1; }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1080px) {
             .swipe-hint {
                 display: block;
             }
